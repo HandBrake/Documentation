@@ -47,7 +47,7 @@ Audio Encoders
     -   On Mac, HandBrake uses Apple's CoreAudio AAC encoder. It's known to be
         much better quality and is the default option for Mac users.
 
--   HE-AAC ( Mac Only)
+-   HE-AAC (Mac Only)
 
     -   High Efficiency AAC encoder. This encoder is optimized for low-bitrate
         applications which may be useful for streaming.
@@ -76,12 +76,26 @@ Audio Encoders
 
 -   Flac 16 and 24bit (FFmpeg)
 
-    -   Loss-less audio compression.
+    -   Lossless audio compression.
 
     -   Available in MKV files.
 
     -   It is not currently possible to passthru the compression level to the
         ffmpeg encoder which is currently defaulted to "5"
+        
+-   Opus:
+    
+    -   Successor to Vorbis.
+    
+    -   HandBrake currently uses libopus 1.3.1 for Opus encoding.
+    
+    -   Designed to have the greatest audio quality at the lowest bitrate.
+        
+    -   Recent codec, initial release was in 2012 - cutting edge but lacks
+        ubiquitous support of older formats such as AAC.
+        
+    -   Opus is currently supported in VLC, mpv, ffmpeg, Android 5.0+ and iOS 11+
+        (this list is not exhaustive).
 
  
 
