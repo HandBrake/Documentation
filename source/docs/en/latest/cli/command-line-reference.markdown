@@ -265,7 +265,7 @@ The following details all the available options in the command line interface. T
                   <string>     Separate tracks by commas.
                                0 = Disable Normalization (default)
                                1 = Enable Normalization
-       -R, --arate             Set audio samplerate(s)
+       -R, --arate <float>     Set audio samplerate(s)
                                (8/11.025/12/16/22.05/24/32/44.1/48 kHz)
                                or "auto". Separate tracks by commas.
        -D, --drc <float>       Apply extra dynamic range compression to the
